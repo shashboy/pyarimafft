@@ -12,6 +12,10 @@ pip install pyarimafft
 ## Usage
 
 ```py
+import numpy as np
+
+import pyarimafft
+
 endog = np.array(vector)
 
 model_obj = pyarimafft.model(forecast_horizon=12)
