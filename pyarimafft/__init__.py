@@ -5,6 +5,9 @@ import pandas as pd
 from  statsmodels.tsa.arima.model import ARIMA
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
+from .constants import VERSION
+
+__version__ = VERSION
 
 
 def outlier_label(err2,threshold):
