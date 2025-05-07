@@ -3,15 +3,15 @@
 A Python Library which efficiently combines LOESS cleaning, Fast Fourier Transform Extracted key Cyclicities and ARIMA
 to produce meaningful and explainable time series forecasts.
 
-
 ## Installation 
+
+```sh
 pip install pyarimafft
-
-
+```
 
 ## Usage
 
-
+```py
 endog = np.array(vector)
 
 model_obj = pyarimafft.model(forecast_horizon=12)
@@ -28,7 +28,7 @@ model_obj.add_exog(exog1)
 
 model_obj.add_exog(exog2)
 
-## Call the auto_arima function 
+## Call the auto_arima function
 
 model_obj.auto_arima(p=None,d=None,q=None,max_p=3,max_q=3,max_d=1,auto_fit=True)
 
@@ -36,35 +36,29 @@ model_obj.auto_arima(p=None,d=None,q=None,max_p=3,max_q=3,max_d=1,auto_fit=True)
 
 model_obj.endog
 
-model_obj.trend 
+model_obj.trend
 
-model_obj.outlier_cleaned 
+model_obj.outlier_cleaned
 
-model_obj.seasonal_component 
+model_obj.seasonal_component
 
-model_obj.isolated_components 
+model_obj.isolated_components
 
-model_obj.isolated_seasonality 
+model_obj.isolated_seasonality
 
-model_obj.forecast  
+model_obj.forecast
 
-model_obj.seasonal_feature_train 
+model_obj.seasonal_feature_train
 
-model_obj.seasonal_feature_future 
+model_obj.seasonal_feature_future
 
-model_obj.time_train  
+model_obj.time_train
 
-model_obj.time_future  
+model_obj.time_future
 
 model_obj.forecast_horizon
 
-model_obj.forecast 
+model_obj.forecast
 
-model_obj.optimal_order 
-
-'''
-
-
-
-
- 
+model_obj.optimal_order
+```
