@@ -7,7 +7,7 @@
 A Python Library which efficiently combines LOESS cleaning, Fast Fourier Transform Extracted key Cyclicities and ARIMA
 to produce meaningful and explainable time series forecasts.
 
-## Installation 
+## Installation
 
 ```sh
 pip install pyarimafft
