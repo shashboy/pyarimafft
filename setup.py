@@ -38,4 +38,7 @@ setup(
     packages=find_packages(exclude=["contrib", "docs", "tests"]),
     python_requires=">=3.8",
     install_requires=get_requirements(),
+    extra_require={
+        "dev": get_requirements("dev"),
+    },
 )

@@ -77,3 +77,14 @@ model_obj.forecast
 
 model_obj.optimal_order
 ```
+
+## Contribution
+
+Please add Issues or submit Pull Requests!
+
+For local development, install optional testing dependencies and pre-commit hooks using
+
+```sh
+pip install pyarimafft[dev]
+pre-commit install
+```
