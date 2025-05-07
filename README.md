@@ -20,11 +20,18 @@ endog = np.array(vector)
 
 model_obj = pyarimafft.model(forecast_horizon=12)
 
-model_obj.outlier_clean(endog=endog,window_size=10,outlier_threshold=0.8,peak_clean=False,trough_clean=False,both_sides_clean=True)
+model_obj.outlier_clean(
+    endog=endog,
+    window_size=10,
+    outlier_threshold=0.8,
+    peak_clean=False,
+    trough_clean=False,
+    both_sides_clean=True,
+)
 
-model_obj.extract_key_seasonalities(power_quantile=0.90,time_period=d)
+model_obj.extract_key_seasonalities(power_quantile=0.90, time_period=d)
 
-model_obj.reconstruct_seasonal_features(mode='seperate')
+model_obj.reconstruct_seasonal_features(mode="seperate")
 
 ## It is possible to add one exogenous vector at a time
 
@@ -34,7 +41,7 @@ model_obj.add_exog(exog2)
 
 ## Call the auto_arima function
 
-model_obj.auto_arima(p=None,d=None,q=None,max_p=3,max_q=3,max_d=1,auto_fit=True)
+model_obj.auto_arima(p=None, d=None, q=None, max_p=3, max_q=3, max_d=1, auto_fit=True)
 
 ## Attributes which you can extract
 
