@@ -1,8 +1,8 @@
-import numpy as np 
-import statsmodels.api as sm 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
-from  statsmodels.tsa.arima.model import ARIMA
+import statsmodels.api as sm
+from statsmodels.tsa.arima.model import ARIMA
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
 from .constants import VERSION
