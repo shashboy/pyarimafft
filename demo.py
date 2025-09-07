@@ -1,21 +1,3 @@
-# pyarimafft library
-
-[![PyPI Latest Release](https://img.shields.io/pypi/v/pyarimafft.svg)](https://pypi.org/project/pyarimafft/)
-[![PyPI downloads](https://static.pepy.tech/badge/pyarimafft)](https://pepy.tech/project/pyarimafft)
-[![License](https://img.shields.io/github/license/shashboy/pyarimafft)](https://github.com/shashboy/pyarimafft/blob/main/LICENSE)
-
-A Python Library which efficiently combines LOESS cleaning, Fast Fourier Transform Extracted key Cyclicities and ARIMA
-to produce meaningful and explainable time series forecasts.
-
-## Installation 
-
-```sh
-pip install pyarimafft
-```
-
-## Usage
-
-```py
 import numpy as np
 
 import pyarimafft
@@ -76,4 +58,3 @@ model_obj.forecast_horizon
 model_obj.forecast
 
 model_obj.optimal_order
-```
