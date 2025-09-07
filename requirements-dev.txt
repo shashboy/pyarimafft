@@ -1,0 +1,4 @@
+black
+isort[colors]
+pre-commit
+setuptools
